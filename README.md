@@ -19,12 +19,12 @@ This repository contains a simple calculator built using HTML, CSS, and JavaScri
 
    ```bash
    git clone https://github.com/<your-username>/simple-calculator.git
-Contributing:
+## Contributing:
 
 Feel free to fork this repository and contribute your improvements!
 
--Fork it
--Create your feature branch: git checkout -b my-new-feature
--Commit your changes: git commit -m 'Add some feature
--Push to the branch: git push origin my-new-feature
--Create new Pull Request
+- Fork it
+- Create your feature branch: git checkout -b my-new-feature
+- Commit your changes: git commit -m 'Add some feature
+- Push to the branch: git push origin my-new-feature
+- Create new Pull Request
