@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="output.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+</head>
+<body class="h-screen w-screen flex justify-center items-center flex-col bg-gray-300">
+    <div id="display" class="h-[100px] w-[350px] text-4xl bg-gray-500 rounded-t-lg shadow-md flex justify-end items-start"></div>
+    <div class="bg-black h-[430px] w-[350px] grid grid-cols-4 grid-rows-4">
+        <button id="butto fn clear" class="w-[75px] h-[75px] rounded-full bg-orange-500 place-self-center hover:bg-orange-600 transition-colors" onclick="clearDisplay()"><p class="py-7 px-7 cursor-default" >AC</p></button>
+        <button id="butto fn divide" class="w-[75px] h-[75px] rounded-full bg-orange-500 place-self-center hover:bg-orange-600 transition-colors" onclick="setDisplay('/')"><p class="py-7 px-9 cursor-default">/</p></button>
+        <button id="butto fn multiply" class="w-[75px] h-[75px] rounded-full bg-orange-500 place-self-center hover:bg-orange-600 transition-colors" onclick="setDisplay('*')"><p class="py-7 px-9 cursor-default">X</p></button>
+        <button id="butto 9" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors" ><p class="py-7 px-9 cursor-default active:bg-slate-700 rounded-full" onclick="setDisplay(9)">9</p></button>
+        <button id="butto 8" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(8)">8</p></button>
+        <button id="butto 7" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(7)">7</p></button>
+        <button id="butto 6" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(6)">6</p></button>
+        <button id="butto 5" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(5)">5</p></button>
+        <button id="butto 4" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(4)">4</p></button>
+        <button id="butto 3" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(3)">3</p></button>
+        <button id="butto 2" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(2)">2</p></button>
+        <button id="butto 1" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(1)">1</p></button>
+        <button id="butto 0" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay(0)">0</p></button>
+        <button id="butto add" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay('+')">+</p></button>
+        <button id="butto subtract" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="setDisplay('-')">-</p></button>
+        <button id="butto equal" class="w-[75px] h-[75px] rounded-full bg-slate-400 place-self-center hover:bg-slate-500 transition-colors"><p class="py-7 px-9 cursor-default" onclick="calculate()">=</p></button>
+        
+    </div>
+</body>
+</html>
